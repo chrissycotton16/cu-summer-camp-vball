@@ -1,0 +1,23 @@
+/* slideshow css */
+#slideshow-container {
+    width: auto;
+    margin: 5px auto;
+    padding: 0;
+    background-color:#fff;
+  }
+  /*
+  .items{
+    width:100%;
+    max-width:auto;
+    height: 500px;
+    background: #77f;
+  }
+  */
+  .carousel-images{
+    widows: auto;
+    height:300px;
+  }
+  
+  #left, #right{
+    margin: 10px;
+  }

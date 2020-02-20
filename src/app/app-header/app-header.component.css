@@ -1,0 +1,21 @@
+#title-header{
+    margin: auto;
+    text-align:center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.toolbar {
+    height: 50px;
+    margin: -8px;
+    background-color:#003366;
+    color:#97824a;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+} 
+
+.toolbar img {
+    margin: 0 32px;
+    align-content: right;
+    
+}
