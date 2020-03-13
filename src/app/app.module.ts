@@ -8,19 +8,23 @@ import { AppSlideshowComponent } from './app-slideshow/app-slideshow.component';
 import { AppDocumentsComponent } from './app-documents/app-documents.component';
 import {PdfViewerModule} from 'ng2-pdf-viewer';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTableModule} from '@angular/material';
+import { AppContactsComponent } from './app-contacts/app-contacts.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppHeaderComponent,
     AppSlideshowComponent,
-    AppDocumentsComponent
+    AppDocumentsComponent,
+    AppContactsComponent
   ],
   imports: [
     BrowserModule,
     Ng2CarouselamosModule,
     PdfViewerModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
