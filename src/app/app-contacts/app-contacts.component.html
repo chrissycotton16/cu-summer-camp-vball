@@ -1,4 +1,4 @@
-<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8" onload=loadData()>
 
     <!--- Note that these columns can be defined in any order.
           The actual rendered columns are set as a property on the row definition" -->
@@ -24,4 +24,17 @@
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
+
+<script>
+function loadData(){
+    var fs = require('fs');
+    try{
+        var data = fs.readFileSync('src/assets/dumbyData.csv', 'utf8');
+        console.log(data);
+    }
+    catch(e){
+        console.log("error: ", e.stack);
+    }
+}
+</script>
   

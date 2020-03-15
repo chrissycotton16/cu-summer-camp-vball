@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { readFile } from 'fs';
-import { csv } from 'csv-parser';
+
 
 export interface dumbyData {
   name: string;
@@ -26,21 +25,6 @@ export class AppContactsComponent implements OnInit {
 }
 
 function getData(){
-//  let reader = new FileReader;
-//  let content = reader.readAsText("../assets/dumbyData.xlsx");
-const csv = require('csv-parser')
-const fs = require('fs')
-const results = [];
- 
-fs.createReadStream('src\assets\dumbyData.csv'))
-  .pipe(csv())
-  .on('data', (data) => results.push(data))
-  .on('end', () => {
-    console.log(results);
-    // [
-    //   { NAME: 'Daffy Duck', AGE: '24' },
-    //   { NAME: 'Bugs Bunny', AGE: '22' }
-    // ]
-  });
-  
+
+
 }

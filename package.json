@@ -21,9 +21,10 @@
     "@angular/platform-browser": "~8.2.3",
     "@angular/platform-browser-dynamic": "~8.2.3",
     "@angular/router": "~8.2.3",
+    "csv-parser": "^2.3.2",
     "lodash.isequal": "^4.5.0",
     "ng2-carouselamos": "^4.1.0",
-    "ng2-pdf-viewer": "^6.1.1",
+    "ng2-pdf-viewer": "^6.1.2",
     "rxjs": "~6.4.0",
     "tslib": "^1.11.1",
     "zone.js": "~0.9.1"
