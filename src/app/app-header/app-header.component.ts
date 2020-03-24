@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+
+export interface DialogData{
+
+}
 
 @Component({
   selector: 'app-app-header',
@@ -7,9 +11,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppHeaderComponent implements OnInit {
 
-  constructor() { }
-
   ngOnInit() {
   }
+
+ 
+
 
 }

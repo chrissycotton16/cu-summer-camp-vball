@@ -10,6 +10,7 @@ import {PdfViewerModule} from 'ng2-pdf-viewer';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTableModule} from '@angular/material';
 import { AppContactsComponent } from './app-contacts/app-contacts.component';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -18,13 +19,15 @@ import { AppContactsComponent } from './app-contacts/app-contacts.component';
     AppSlideshowComponent,
     AppDocumentsComponent,
     AppContactsComponent
+    
   ],
   imports: [
     BrowserModule,
     Ng2CarouselamosModule,
     PdfViewerModule,
     BrowserAnimationsModule,
-    MatTableModule
+    MatTableModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
