@@ -1,4 +1,6 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { AppLoginComponent } from '../app-login/app-login.component';
+import { AppLoginDialogComponent } from '../app-login/app-login-dialog/app-login-dialog.component';
 
 export interface DialogData{
 
@@ -13,7 +15,8 @@ export class AppHeaderComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  
+  
  
 
 

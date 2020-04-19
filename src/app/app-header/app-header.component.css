@@ -1,103 +1,101 @@
-/* Navbar container */
-.navbar {
-    overflow: hidden;
-    background-color:#003366;
-    font-family: Arial;
-    min-width: inherit;
-    text-align: center;
-  }
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
 
-  .log-button{
-    text-align: right;
-    display: inline;
-    background-color: purple;
-    float: right;
-  }
-
-  /* Links inside the navbar */
-.navbar a {
-    float: left;
-    font-size: 20px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+li, a, button{
+  font-family: 'Times New Roman', Times, serif;
 }
 
-.dropdown img {
-    margin: 0px;
-    align-content: center;
-    background-color: white;
-   
-    height:auto;
-    width:100px;
+h2{
+  color:#97824a;
 }
-  .header-title{
-   float: center;
-   text-align: center;
 
-  }
-  /* The dropdown container */
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
-  /* Dropdown button */
-  .dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    color: white;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
-  }
-  
-  /* Add a red background color to navbar links on hover */
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color:#97824a;
-  }
-  
-  /* Dropdown content (hidden by default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    float: none;
-    color: #003366;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  /* Add a grey background color to dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color: #003366;
-    color: white
-  }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+.logo{
+  height: 40px;
+  margin: 0px;
+  padding: 0px 0px 0px 10px;
+  justify-content: left;
+}
 
-/* old css */
-.header-title{
-    margin: auto;
-    text-align:center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    height: auto;
-    font-weight: bold;
-    font-size: 40px;
-    align-items: center;
-    color: #97824a;
+.header{
+  display:flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 10px 10px 0px 0px;
+  background: #003366
+}
+
+ul{
+  list-style: none;
+}
+
+li{
+  display: inline-block;
+  padding: 0px 20px;
+  font-size: 18px;
+}
+
+li a{
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: #fff;
+}
+
+li a:hover{
+  color: #97824a;
+}
+
+button{
+  padding: 9px 25px;
+  background-color: #fff;
+  border: #97824a;
+  border-style: solid;
+  height: 45px;
+  border-radius: 60px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-size: 18px;
+}
+
+button:hover{
+  background-color: #97824a;
+  color: #fff;
+}
+
+@media all and (max-width: 100%) {
+  header {
+    justify-content: space-around;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .header {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .header a, button { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255,0.3); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+  }
+  .header li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .header {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .header a, button { 
+    text-align: center; 
+    padding: 10px;
+  }
+  .header li:last-of-type a {
+    border-bottom: none;
+  }
 }
 
 

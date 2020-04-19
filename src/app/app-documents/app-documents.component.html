@@ -1,5 +1,37 @@
-<p>app-documents works!</p>
-<div class="documents-text">
-    <h1>Contact Information for Campers</h1>
-    <p>Click to view the pdf for camp counselor's phone numbers and room numbers.</p>
-</div>
+<h1>
+  Important Documents (Please read the documents below.)
+</h1>
+<mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+            Clarion University Camp Information
+        </mat-panel-title>
+        <mat-panel-description>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <pdf-viewer [src]="pdfSrc"               [render-text]="true"              style="display: block; width:auto; height: 700px"  ></pdf-viewer> 
+    </mat-expansion-panel>
+    
+    <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                  Itinerary
+              </mat-panel-title>
+              <mat-panel-description>
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <pdf-viewer [src]="pdfSrc2"               [render-text]="true"              style="display: block; width:auto; height: 700px"  ></pdf-viewer> 
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                  Tornado Evacuation
+              </mat-panel-title>
+              <mat-panel-description>
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <pdf-viewer [src]="pdfSrc3"               [render-text]="true"              style="display: block; width:auto; height: 700px"  ></pdf-viewer> 
+          </mat-expansion-panel>
+  </mat-accordion>
