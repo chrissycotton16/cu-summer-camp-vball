@@ -19,7 +19,6 @@ export class AppContactsComponent {
   dataSource = ELEMENT_DATA;
   data: Blob;
   
-  constructor() {
   }
 
   
