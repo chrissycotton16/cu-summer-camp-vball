@@ -10,10 +10,11 @@ import {PdfViewerModule} from 'ng2-pdf-viewer';
 export class AppDocumentsComponent implements OnInit {
 
   constructor() { }
+  //List of 
   pdfSrc="./assets/camp_confirmation.pdf";
   pdfSrc2="./assets/Itinerary.pdf";
   pdfSrc3="./assets/Tornado.pdf";
-  //pdfSrc4="./assets/camp_confirmation.pdf"
+
   ngOnInit() {
   }
 }

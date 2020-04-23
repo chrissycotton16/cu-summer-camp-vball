@@ -19,6 +19,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import { AppIntroComponent } from './app-intro/app-intro.component';
 import { AppFaqComponent } from './app-faq/app-faq.component';
 import { AppContactDialogComponent } from './app-contacts/app-contact-dialog/app-contact-dialog.component';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatButtonModule} from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
@@ -43,7 +46,9 @@ import { AppContactDialogComponent } from './app-contacts/app-contact-dialog/app
     MatInputModule,
     FormsModule,
     NgbModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatSnackBarModule,
+    MatButtonModule
   ],
   providers: [],
   entryComponents: [AppLoginDialogComponent, AppContactDialogComponent],

@@ -12,8 +12,8 @@ export interface DialogData {
   templateUrl: './app-login.component.html',
   styleUrls: ['./app-login.component.css']
 })
-export class AppLoginComponent implements OnInit {
 
+export class AppLoginComponent implements OnInit {
   user: string;
   password: string; 
 
@@ -25,15 +25,11 @@ export class AppLoginComponent implements OnInit {
       data: {user: this.user, password: this.password}
     });
 
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-      this.password = result;
-    });
+    dialogRef.afterClosed().subscribe( addingString => console.log("LOGIN OUTPUTTTTT!!!!!!!!!!!!!!!!!!!: ", addingString));
   }
 
   ngOnInit() {
   }
-
 }
 
 

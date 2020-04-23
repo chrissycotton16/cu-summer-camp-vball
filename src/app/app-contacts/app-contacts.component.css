@@ -17,3 +17,18 @@ tr:nth-child(even) {
 .tableHolder{
   margin: 40px 25px;
 }
+
+
+button{
+  padding: 9px 25px;
+  background-color: #003366;
+  color: #fff;
+  height: auto;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover{
+  background-color: #97824a;
+  color: #fff;
+}
